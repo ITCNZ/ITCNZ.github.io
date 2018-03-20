@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a29c82;
+  background: #ff1a2e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2659,4 +2659,24 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.post {
+  margin-bottom: 100px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcc;
+  background: #fff;
+  border-radius: 3px;
+}
+.posts-expand .post-body img {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  border: 1px solid #ddd !important;
+}
+body {
+  background: #f0f0f0 url("http://pic1.win4000.com/wallpaper/c/58535d64d63b9.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
