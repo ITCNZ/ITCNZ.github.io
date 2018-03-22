@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Itcnz Blog">
 <meta property="og:description" content="阅读本文之前，先看下面这个webpack的配置文件，如果每一项你都懂，那本文能带给你的收获也许就比较有限，你可以快速浏览或直接跳过；如果你和十天前的我一样，对很多选项存在着疑惑，那花一段时间慢慢阅读本文，你的疑惑一定一个一个都会消失；如果你以前没怎么接触过Webpack，而你又你对webpack感兴趣，那么动手跟着本文中那个贯穿始终的例子写一次，写完以后你会发现你已明明白白的走进了Webpack的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-22T09:41:48.000Z">
+<meta property="og:updated_time" content="2018-03-22T09:43:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="入门 Webpack，看这篇就够了(转)">
 <meta name="twitter:description" content="阅读本文之前，先看下面这个webpack的配置文件，如果每一项你都懂，那本文能带给你的收获也许就比较有限，你可以快速浏览或直接跳过；如果你和十天前的我一样，对很多选项存在着疑惑，那花一段时间慢慢阅读本文，你的疑惑一定一个一个都会消失；如果你以前没怎么接触过Webpack，而你又你对webpack感兴趣，那么动手跟着本文中那个贯穿始终的例子写一次，写完以后你会发现你已明明白白的走进了Webpack的">
@@ -579,6 +579,7 @@ ExtractTextPlugin：分离CSS和JS文件
 <h2 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h2><p>引入clean-webpack-plugin插件后在配置文件的plugins中做相应配置即可：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const CleanWebpackPlugin = require(&quot;clean-webpack-plugin&quot;);</span><br><span class="line">  plugins: [</span><br><span class="line">    ...// 这里是之前配置的其它各种插件</span><br><span class="line">    new CleanWebpackPlugin(&apos;build/*.*&apos;, &#123;</span><br><span class="line">      root: __dirname,</span><br><span class="line">      verbose: true,</span><br><span class="line">      dry: false</span><br><span class="line">  &#125;)</span><br><span class="line">  ]</span><br></pre></td></tr></table></figure>
 <p>关于clean-webpack-plugin的详细使用可参考<a href="https://github.com/johnagan/clean-webpack-plugin" target="_blank" rel="noopener">这里</a></p>
+<p>本文转自: <a href="https://segmentfault.com/a/1190000006178770" target="_blank" rel="noopener">https://segmentfault.com/a/1190000006178770</a></p>
 
       
     </div>
