@@ -1956,7 +1956,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fcba77;
+  background: #f52ffa;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2809,7 +2809,7 @@ embed {
   border: 1px solid #ddd !important;
 }
 body {
-  background: #f0f0f0 url("http://pic1.win4000.com/wallpaper/c/58535d64d63b9.jpg");
+  background: #f0f0f0 url("../../images/web_bg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
