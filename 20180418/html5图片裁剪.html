@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Vue,Nuxt,Express,MongoDB," />
+  <meta name="keywords" content="HTML5,CSS3," />
 
 
 
@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="因为目前的spa单页项目对seo很不友好，如果你希望自己的网站在seo这块有较好的支持，可以尝试一下SSR技术，nuxt.js就是专门针对vue这一问题实现的技术，因此这一次我就尝试写了一个项目，主要实现的一个简单的文章的增删改查系统，主要为实现nuxt集合node实现ssr功能。新人可以学习下https://github.com/ITCNZ/mynuxt（如果觉得还不错请给个✨✨✨star星星吧">
-<meta name="keywords" content="Vue,Nuxt,Express,MongoDB">
+<meta name="description" content="一个简单的HTML5+CSS3+JQUERY实现的图片裁剪插件。主要用的是HTML5中input标签的input[type=&quot;file&quot;]属性加上canvas的画布功能。实现起来比较简单,需要的同学可以借鉴一些。">
+<meta name="keywords" content="HTML5,CSS3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue+nuxt+scss+node+express+MongoDB 实现的文章发布系统">
-<meta property="og:url" content="https://www.itcnz.top/20180320/mynuxt.html">
+<meta property="og:title" content="html5图片裁剪">
+<meta property="og:url" content="https://www.itcnz.top/20180418/html5图片裁剪.html">
 <meta property="og:site_name" content="Itcnz Blog">
-<meta property="og:description" content="因为目前的spa单页项目对seo很不友好，如果你希望自己的网站在seo这块有较好的支持，可以尝试一下SSR技术，nuxt.js就是专门针对vue这一问题实现的技术，因此这一次我就尝试写了一个项目，主要实现的一个简单的文章的增删改查系统，主要为实现nuxt集合node实现ssr功能。新人可以学习下https://github.com/ITCNZ/mynuxt（如果觉得还不错请给个✨✨✨star星星吧">
+<meta property="og:description" content="一个简单的HTML5+CSS3+JQUERY实现的图片裁剪插件。主要用的是HTML5中input标签的input[type=&quot;file&quot;]属性加上canvas的画布功能。实现起来比较简单,需要的同学可以借鉴一些。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1">
-<meta property="og:updated_time" content="2018-03-20T10:44:18.000Z">
+<meta property="og:updated_time" content="2018-04-18T10:08:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue+nuxt+scss+node+express+MongoDB 实现的文章发布系统">
-<meta name="twitter:description" content="因为目前的spa单页项目对seo很不友好，如果你希望自己的网站在seo这块有较好的支持，可以尝试一下SSR技术，nuxt.js就是专门针对vue这一问题实现的技术，因此这一次我就尝试写了一个项目，主要实现的一个简单的文章的增删改查系统，主要为实现nuxt集合node实现ssr功能。新人可以学习下https://github.com/ITCNZ/mynuxt（如果觉得还不错请给个✨✨✨star星星吧">
-<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1">
+<meta name="twitter:title" content="html5图片裁剪">
+<meta name="twitter:description" content="一个简单的HTML5+CSS3+JQUERY实现的图片裁剪插件。主要用的是HTML5中input标签的input[type=&quot;file&quot;]属性加上canvas的画布功能。实现起来比较简单,需要的同学可以借鉴一些。">
 
 
 
@@ -122,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://www.itcnz.top/20180320/mynuxt.html"/>
+  <link rel="canonical" href="https://www.itcnz.top/20180418/html5图片裁剪.html"/>
 
 
 
@@ -140,7 +138,7 @@
 
 
 
-  <title>vue+nuxt+scss+node+express+MongoDB 实现的文章发布系统 | Itcnz Blog</title>
+  <title>html5图片裁剪 | Itcnz Blog</title>
   
 
 
@@ -297,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.itcnz.top/20180320/mynuxt.html">
+    <link itemprop="mainEntityOfPage" href="https://www.itcnz.top/20180418/html5图片裁剪.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhouhappy">
@@ -314,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vue+nuxt+scss+node+express+MongoDB 实现的文章发布系统</h1>
+          <h1 class="post-title" itemprop="name headline">html5图片裁剪</h1>
         
 
         <div class="post-meta">
@@ -326,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T10:42:26+08:00">
-                2018-03-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-18T18:02:36+08:00">
+                2018-04-18
               </time>
             
 
@@ -349,8 +347,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/nuxt技术分享/" itemprop="url" rel="index">
-                    <span itemprop="name">nuxt技术分享</span>
+                  <a href="/categories/HTML5/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML5</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML5/CSS3/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS3</span>
                   </a>
                 </span>
 
@@ -368,8 +377,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/20180320/mynuxt.html#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="20180320/mynuxt.html" itemprop="commentsCount"></span>
+                <a href="/20180418/html5图片裁剪.html#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="20180418/html5图片裁剪.html" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -384,7 +393,7 @@
 
           
               <div class="post-description">
-                  因为目前的spa单页项目对seo很不友好，如果你希望自己的网站在seo这块有较好的支持，可以尝试一下SSR技术，nuxt.js就是专门针对vue这一问题实现的技术，因此这一次我就尝试写了一个项目，主要实现的一个简单的文章的增删改查系统，主要为实现nuxt集合node实现ssr功能。新人可以学习下https://github.com/ITCNZ/mynuxt（如果觉得还不错请给个✨✨✨star星星吧✨✨✨） 也可以加 nuxt技术交流群：群号:320243648
+                  一个简单的HTML5+CSS3+JQUERY实现的图片裁剪插件。主要用的是HTML5中input标签的input[type="file"]属性加上canvas的画布功能。实现起来比较简单,需要的同学可以借鉴一些。
               </div>
           
 
@@ -399,69 +408,31 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1" rel="gallery_cjg4xp5t60006j3fykfbhx6wt"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
-        <h2 id="mynuxt是一个文章增删改查系统"><a href="#mynuxt是一个文章增删改查系统" class="headerlink" title="mynuxt是一个文章增删改查系统"></a>mynuxt是一个文章增删改查系统</h2><blockquote>
-<p>Nuxt.js project，该项目是一个ssr结构完整的项目，适合新人练手使用，如果对您有帮助，请右上角给个star，鼓励一下，同时希望指正。也可以加 nuxt技术交流群：群号:320243648</p>
-</blockquote>
-<h2 id="用到的技术"><a href="#用到的技术" class="headerlink" title="用到的技术"></a>用到的技术</h2><blockquote>
-<p>Vue2.0</p>
+        <h3 id="1-html部分"><a href="#1-html部分" class="headerlink" title="1.html部分"></a>1.html部分</h3><blockquote>
+<p>使用一个input[type=”file”]进行图片上传；</p>
 </blockquote>
 <blockquote>
-<p>Nuxt1.0</p>
+<p>canvas进行图片的裁剪展示</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;input type=&quot;file&quot; id=&quot;imgFile&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;demoBox&quot; style=&quot;width: 300px;height: 300px;position: absolute;left: 300px;top: 0;overflow:hidden;border: 1px solid #ccc&quot;&gt;</span><br><span class="line">    &lt;img id=&quot;demoImg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;div style=&quot;width: 150px;height: 150px;border: 1px solid #4fb8e3;background:rgba(255,255,255,.5);position: absolute;left: 0;top: 0;z-index: 1000;cursor:move&quot; id=&quot;chooseBox&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div style=&quot;position: absolute;left: 700px;top: 0&quot;&gt;</span><br><span class="line">    &lt;canvas id=&quot;myCan&quot; width=&quot;150&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;</span><br><span class="line">    &lt;button id=&quot;cut&quot;&gt;裁剪文件&lt;/button&gt;</span><br><span class="line">    &lt;button id=&quot;btn&quot;&gt;后台返回获取裁剪后的文件&lt;/button&gt;</span><br><span class="line">    &lt;img id=&quot;returnImg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-js部分"><a href="#2-js部分" class="headerlink" title="2.js部分"></a>2.js部分</h3><blockquote>
+<p>a.使用file文件的files属性，获取上传图片的基本属性；</p>
 </blockquote>
 <blockquote>
-<p>Node9.8 (必须&gt;=8.0)</p>
+<p>b. new FileReader() 对象，使用其属性e.target.result将图片地址转为base64，赋给img标签上；</p>
 </blockquote>
 <blockquote>
-<p>Express</p>
+<p>c. 创建一个裁剪选区，用以选择需要裁剪的部位，同事使用mousedown,mousemove,mouseup事件进行选框的拖拽；</p>
 </blockquote>
 <blockquote>
-<p>MongoDB</p>
+<p>d. 使用canvas中的drawImage()方法进行图片的裁剪，展示到canvass画布上；</p>
 </blockquote>
 <blockquote>
-<p>element-ui</p>
+<p>e.用户在使用裁剪时候，可多次裁剪，因此需要每次裁剪之后利用clearRect()方法，进行画布的清除</p>
 </blockquote>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">├── assets                              资源目录 assets 用于组织未编译的静态资源如 LESS、SASS 或 JavaScript</span><br><span class="line">├── build                               打包后的文件</span><br><span class="line">├── components                          存放组件，用于组织应用的 Vue.js 组件</span><br><span class="line">│   ├── Footer                          页面footer组件</span><br><span class="line">│   ├── ....</span><br><span class="line">├── layouts                             布局模板文件，默认default，通过为页面设置layout更改</span><br><span class="line">│   ├── edit                            编辑/创建文章模板</span><br><span class="line">│   ├── ....</span><br><span class="line">├── middleware                          存放应用的中间件</span><br><span class="line">├── node_modules                        Node依赖文件</span><br><span class="line">├── nuxt.config.js                      Nuxt主配置文件</span><br><span class="line">├── pages                               存放页面的目录</span><br><span class="line">│   ├── index.vue                       首页</span><br><span class="line">│   ├── ....</span><br><span class="line">├── plugins                             存放插件，用于组织那些需要在 根vue.js应用 实例化之前需要运行的 Javascript 插件</span><br><span class="line">│   └── nuxt-quill-plugin.js            富文本编辑器插件</span><br><span class="line">├── README.md                           README</span><br><span class="line">├── server                              express后台目录</span><br><span class="line">│   ├── api.js                          server端接口</span><br><span class="line">│   ├── db.js                           连接MongoDB数据库文件</span><br><span class="line">│   ├── listrouter.js                   server启动配置</span><br><span class="line">│   ├── ....</span><br><span class="line">├── static                              静态文件目录,此类文件不会被 Nuxt.js 调用 Webpack 进行构建编译处理。 服务器启动的时候，该目录下的文件会映射至应用的根路径 / 下</span><br><span class="line">├── util                                存放一些工具文件（自己添加）</span><br><span class="line">│   ├── net.js                          封装网络请求</span><br><span class="line">│   ├── ui.js                           封装ui弹框配置</span><br><span class="line">│   ├── ...</span><br></pre></td></tr></table></figure>
-<h2 id="前端开发指南"><a href="#前端开发指南" class="headerlink" title="前端开发指南"></a>前端开发指南</h2><blockquote>
-<p>首先需要安装 &gt;=node8.0 因为nuxt1.0.0 必须在&gt;=node8.0的环境下才可以安装成功</p>
-</blockquote>
-<blockquote>
-<p>安装element-ui, 安装放发页面<a href="http://element.eleme.io/#/zh-CN/component/quickstart" target="_blank" rel="noopener">这个页面</a>下面有比较详细的demo,可参考</p>
-</blockquote>
-<blockquote>
-<p>富文本编辑器nuxt-quill-plugin的安装与使用 <a href="https://github.com/surmon-china/vue-quill-editor" target="_blank" rel="noopener">nuxt-quill-plugin</a></p>
-</blockquote>
-<blockquote>
-<p>（划重点，因为本地前后端检测同一个接口无法实现，所以与下面的后端端口不同）前端监控的是3000端口 ,执行命令 “npm run dev”;</p>
-</blockquote>
-<h2 id="后端开发指南"><a href="#后端开发指南" class="headerlink" title="后端开发指南"></a>后端开发指南</h2><blockquote>
-<p>下载安装MongoDB, 具体详情不在此赘述,给上链接 <a href="https://www.mongodb.com/download-center?jmp=nav#atlas" target="_blank" rel="noopener">MongoDB</a>.</p>
-</blockquote>
-<blockquote>
-<p>安装Express, 具体详情不在此赘述,给上链接 <a href="http://expressjs.com/zh-cn/4x/api.html" target="_blank" rel="noopener">Express</a></p>
-</blockquote>
-<blockquote>
-<p>（划重点，因为本地前后端检测同一个接口无法实现，所以与上面的前端端口不同）后端监控的是3333端口, 需要,cd 到 server文件夹目录下,执行命令 “supervisor listrouter.js”;</p>
-</blockquote>
-<h2 id="构建与运行"><a href="#构建与运行" class="headerlink" title="构建与运行"></a>构建与运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># install dependencies</span></span><br><span class="line">$ npm install <span class="comment"># Or yarn install</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># serve with hot reload at localhost:3000</span></span><br><span class="line">$ npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># build for production and launch server</span></span><br><span class="line">$ npm run build</span><br><span class="line">$ npm start</span><br><span class="line"></span><br><span class="line"><span class="comment"># generate static project</span></span><br><span class="line">$ npm run generate</span><br></pre></td></tr></table></figure>
-<p>For detailed explanation on how things work, checkout the <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener">Nuxt.js docs</a>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">// 图片裁剪</span><br><span class="line"></span><br><span class="line">    window.onload = function () &#123;</span><br><span class="line"></span><br><span class="line">        // 上传图片</span><br><span class="line">        var canvas = document.getElementById(&apos;myCan&apos;);</span><br><span class="line">        var imgFile = $(&apos;#imgFile&apos;);</span><br><span class="line">        var demoImg = $(&apos;#demoImg&apos;);</span><br><span class="line">        var ctx = canvas.getContext(&apos;2d&apos;);</span><br><span class="line">        imgFile.change(function () &#123;</span><br><span class="line">            var file = imgFile[0].files[0];</span><br><span class="line">            console.log(file);</span><br><span class="line">            var reader = new FileReader();</span><br><span class="line">            reader.onload = function (e) &#123;</span><br><span class="line">                console.log(e);</span><br><span class="line">                demoImg.attr(&apos;src&apos;, e.target.result);</span><br><span class="line">            &#125;;</span><br><span class="line">            reader.readAsDataURL(file);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        // 位移选裁框</span><br><span class="line">        var dragDiv = $(&apos;#chooseBox&apos;);</span><br><span class="line">        dragDiv.mousedown(function (e) &#123;</span><br><span class="line">            var oleft = $(this).position().left;</span><br><span class="line">            var otop = $(this).position().top;</span><br><span class="line">            var X = e.pageX - oleft;</span><br><span class="line">            var Y = e.pageY - otop;</span><br><span class="line">            $(document).mousemove(function (e) &#123;</span><br><span class="line">                var left = e.pageX - X;</span><br><span class="line">                var top = e.pageY - Y;</span><br><span class="line">                if (left &lt;= 0) &#123;</span><br><span class="line">                    left = 0;</span><br><span class="line">                &#125;</span><br><span class="line">                else if (left &gt;= ($(&apos;#demoBox&apos;).outerWidth(true) - dragDiv.outerWidth(true))) &#123;</span><br><span class="line">                    left = ($(&apos;#demoBox&apos;).outerWidth(true) - dragDiv.outerWidth(true));</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if (top &lt;= 0) &#123;</span><br><span class="line">                    top = 0;</span><br><span class="line">                &#125;</span><br><span class="line">                else if (top &gt;= ($(&apos;#demoBox&apos;).outerHeight(true) - dragDiv.outerHeight(true))) &#123;</span><br><span class="line">                    top = ($(&apos;#demoBox&apos;).outerHeight(true) - dragDiv.outerHeight(true));</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                dragDiv.css(&#123;</span><br><span class="line">                    left: left,</span><br><span class="line">                    top: top</span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">        $(document).mouseup(function () &#123;</span><br><span class="line">            $(this).unbind(&apos;mousemove&apos;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        // 裁剪</span><br><span class="line">        function cut() &#123;</span><br><span class="line">            var sx = dragDiv.position().left;</span><br><span class="line">            var sy = dragDiv.position().top;</span><br><span class="line">            var img = document.getElementById(&apos;demoImg&apos;);</span><br><span class="line">            ctx.drawImage(img, sx, sy, 150, 150, 0, 0, 150, 150);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        $(&apos;#cut&apos;).click(function () &#123;</span><br><span class="line">            ctx.clearRect(0, 0, 150, 150);</span><br><span class="line">            cut();</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -508,13 +479,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vue/" rel="tag"># Vue</a>
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
           
-            <a href="/tags/Nuxt/" rel="tag"># Nuxt</a>
-          
-            <a href="/tags/Express/" rel="tag"># Express</a>
-          
-            <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
+            <a href="/tags/CSS3/" rel="tag"># CSS3</a>
           
         </div>
       
@@ -527,15 +494,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/20180418/阿里云部署nuxt项目.html" rel="next" title="阿里云部署nuxt项目">
+                <i class="fa fa-chevron-left"></i> 阿里云部署nuxt项目
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/20180322/webpack-dep.html" rel="prev" title="入门 Webpack，看这篇就够了(转)">
-                入门 Webpack，看这篇就够了(转) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -672,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mynuxt是一个文章增删改查系统"><span class="nav-number">1.</span> <span class="nav-text">mynuxt是一个文章增删改查系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用到的技术"><span class="nav-number">2.</span> <span class="nav-text">用到的技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录结构"><span class="nav-number">3.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端开发指南"><span class="nav-number">4.</span> <span class="nav-text">前端开发指南</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后端开发指南"><span class="nav-number">5.</span> <span class="nav-text">后端开发指南</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建与运行"><span class="nav-number">6.</span> <span class="nav-text">构建与运行</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-html部分"><span class="nav-number">1.</span> <span class="nav-text">1.html部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-js部分"><span class="nav-number">2.</span> <span class="nav-text">2.js部分</span></a></li></ol></div>
             
 
           </div>
