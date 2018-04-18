@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="购买服务器 目前市面上的云服务器有很多可供选择,比如:腾讯云、阿里云、华为云等等五花八门,大家可自行选择,使用套路都差不多,本文以阿里云ECS为例。  创建nuxt项目为啥选择nuxt项目、nuxt的优缺点、以及如何创建nuxt项目不是本文的中心,可以看本人的另一篇文章vue+nuxt+sass+node+express+MongoDB 实现的文章发布系统。此次要部署的项目以此为例,有需要源码的也">
+<meta name="description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
 <meta name="keywords" content="阿里云,node,npm,pm2,nuxt,服务器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="阿里云部署nuxt项目">
 <meta property="og:url" content="https://www.itcnz.top/20180418/阿里云部署nuxt项目.html">
 <meta property="og:site_name" content="Itcnz Blog">
-<meta property="og:description" content="购买服务器 目前市面上的云服务器有很多可供选择,比如:腾讯云、阿里云、华为云等等五花八门,大家可自行选择,使用套路都差不多,本文以阿里云ECS为例。  创建nuxt项目为啥选择nuxt项目、nuxt的优缺点、以及如何创建nuxt项目不是本文的中心,可以看本人的另一篇文章vue+nuxt+sass+node+express+MongoDB 实现的文章发布系统。此次要部署的项目以此为例,有需要源码的也">
+<meta property="og:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T07:10:40.000Z">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1">
+<meta property="og:updated_time" content="2018-04-18T07:15:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云部署nuxt项目">
-<meta name="twitter:description" content="购买服务器 目前市面上的云服务器有很多可供选择,比如:腾讯云、阿里云、华为云等等五花八门,大家可自行选择,使用套路都差不多,本文以阿里云ECS为例。  创建nuxt项目为啥选择nuxt项目、nuxt的优缺点、以及如何创建nuxt项目不是本文的中心,可以看本人的另一篇文章vue+nuxt+sass+node+express+MongoDB 实现的文章发布系统。此次要部署的项目以此为例,有需要源码的也">
+<meta name="twitter:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1">
 
 
 
@@ -335,6 +337,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/nuxt技术分享/" itemprop="url" rel="index">
+                    <span itemprop="name">nuxt技术分享</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/nuxt技术分享/阿里云/" itemprop="url" rel="index">
+                    <span itemprop="name">阿里云</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -359,6 +394,10 @@
           
 
           
+              <div class="post-description">
+                  本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。
+              </div>
+          
 
         </div>
       </header>
@@ -370,6 +409,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1" rel="gallery_cjg4rhob90002lafyzw107iog"
+                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="https://user-gold-cdn.xitu.io/2018/3/20/162414faac18e1d9?imageView2/1/w/1304/h/734/q/85/interlace/1" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
       
 
       
@@ -547,7 +602,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
