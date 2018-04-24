@@ -88,7 +88,7 @@
 <meta property="og:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg">
-<meta property="og:updated_time" content="2018-04-18T08:27:17.000Z">
+<meta property="og:updated_time" content="2018-04-24T07:31:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云部署nuxt项目">
 <meta name="twitter:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
@@ -415,7 +415,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" rel="gallery_cjg4xp5ss0002j3fy5v1bn0vq"
+                 href="http://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" rel="gallery_cjgdcq9j80005sgfyb6zc4hlc"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" itemprop="contentUrl"/>
               </a>
@@ -447,13 +447,13 @@
 <p>具体可以参考 <a href="https://help.aliyun.com/document_detail/25433.html?spm=a2c4g.11186623.6.607.OBxk6Q" target="_blank" rel="noopener">阿里云官网文档</a><br><img src="/20180418/阿里云部署nuxt项目/3.png" alt="阿里云官网文档"></p>
 </blockquote>
 <h3 id="安装node-js、npm"><a href="#安装node-js、npm" class="headerlink" title="安装node.js、npm"></a>安装node.js、npm</h3><blockquote>
-<p>1.开始安装Node.js，先进入/usr/src文件夹，这个文件夹通常用来存放软件源代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/src</span><br></pre></td></tr></table></figure></p>
+<p>1.开始安装Node.js，先进入/root文件夹(安装在/root目录下,也可以指定到自定义目录下)，这个文件夹通常用来存放软件源代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>2.从 Node.js的站点 中获取压缩档源代码, 我选择的版本为v9.10.0(可以直接复制下面代码,修改自己需要的版本就可以)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://nodejs.org/dist/v9.10.0/node-v9.10.0.tar.gz</span><br></pre></td></tr></table></figure></p>
+<p>2.从 Node.js的站点 中获取压缩档源代码, 我选择的版本为v9.10.0(可以直接复制下面代码,修改自己需要的版本就可以)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v9.10.0/node-v9.10.0-linux-x64.tar.xz</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>3.解压缩源文件，并且进入到压缩后的文件夹中:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxf node-v9.10.0.tar.gz</span><br><span class="line">cd node-v9.10.0</span><br></pre></td></tr></table></figure></p>
+<p>3.解压缩源文件，并且进入到压缩后的文件夹中:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf node-v9.10.0-linux-x64.tar.xz</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
 <p>4.创建软连接,全局才可以使用node和npm:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /root/node-v9.10.0-linux-x64/bin/node /usr/local/bin/node</span><br><span class="line">ln -s /root/node-v9.10.0-linux-x64/bin/npm /usr/local/bin/npm</span><br></pre></td></tr></table></figure></p>
@@ -462,13 +462,13 @@
 <p>5.现在已经安装了Node.js, 可以开始部署应用程序, 首先要使用Node.js的模块管理器npm安装pm2.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>6.创建pm2的软连接<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/bin/pm2 /usr/bin/pm2</span><br></pre></td></tr></table></figure></p>
+<p>6.创建pm2的软连接<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /root/node-v9.10.0-linux-x64/bin/pm2 /usr/local/bin/pm2</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <h3 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h3><blockquote>
-<p>1.安装说明：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">安装软件：mongodb-linux-x86_64-2.4.9.tgz</span><br><span class="line"></span><br><span class="line">下载地址： http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz</span><br><span class="line"></span><br><span class="line">上传位置：/usr/local/</span><br><span class="line"></span><br><span class="line">软件安装位置：/usr/local/mongodb</span><br><span class="line"></span><br><span class="line">数据存放位置：/var/mongodb/data日志存放位置：/var/mongodb/logs</span><br></pre></td></tr></table></figure></p>
+<p>1.安装说明：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">安装软件：mongodb-linux-x86_64-2.4.9.tgz</span><br><span class="line"></span><br><span class="line">下载地址： http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz</span><br><span class="line"></span><br><span class="line">上传位置：/root</span><br><span class="line"></span><br><span class="line">软件安装位置：/root/mongodb</span><br><span class="line"></span><br><span class="line">数据存放位置：/var/mongodb/data日志存放位置：/var/mongodb/logs</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>2.进入文件夹/usr/local,下载mongodb源代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz</span><br></pre></td></tr></table></figure></p>
+<p>2.进入文件夹/root,下载mongodb源代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
 <p>3.解压安装包，重命名文件夹为mongodb<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf mongodb-linux-x86_64-2.4.9.tgz</span><br><span class="line">mv mongodb-linux-x86_64-2.4.9 mongodb</span><br></pre></td></tr></table></figure></p>
@@ -477,16 +477,16 @@
 <p>4.在var文件夹里建立mongodb文件夹，并分别建立文件夹data用于存放数据，logs用于存放日志<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir /var/mongodb</span><br><span class="line">mkdir /var/mongodb/data</span><br><span class="line">mkdir /var/mongodb/logs</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>5.打开rc.local文件，添加CentOS开机启动项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/rc.d/rc.local</span><br></pre></td></tr></table></figure></p>
+<p>5.打开rc.local文件，添加CentOS开机启动项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. vim /etc/rc.d/rc.local 默认进去是普通模式，不能写入;</span><br><span class="line"></span><br><span class="line">2. 输入i命令，注意：”i”, 不是”:i”, 然后就可以写了;</span><br><span class="line"></span><br><span class="line">3. 然后按esc,回到普通模式，输入:w,保存，:q退出，回到控制台。</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>6.将mongodb启动命令追加到本文件中，让mongodb开机自启动：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/mongodb/bin/mongod --dbpath=/var/mongodb/data --logpath /var/mongodb/logs/log.log -fork</span><br></pre></td></tr></table></figure></p>
+<p>6.将mongodb启动命令追加到本文件中，让mongodb开机自启动：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/root/mongodb/bin/mongod --dbpath=/var/mongodb/data --logpath /var/mongodb/logs/log.log -fork</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>7.启动mongodb<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/mongodb/bin/mongod --dbpath=/var/mongodb/data --logpath /var/mongodb/logs/log.log -fork</span><br></pre></td></tr></table></figure></p>
+<p>7.启动mongodb<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/root/mongodb/bin/mongod --dbpath=/var/mongodb/data --logpath /var/mongodb/logs/log.log -fork</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>8.看到如下信息说明已经安装完成并成功启动:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">forked process: 18394</span><br></pre></td></tr></table></figure></p>
+<p>8.看到如下信息说明已经安装完成并成功启动:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">forked process: 11221</span><br><span class="line">all output going to: /var/mongodb/logs/log.log</span><br><span class="line">child process started successfully, parent exiting</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <h3 id="上传项目代码"><a href="#上传项目代码" class="headerlink" title="上传项目代码"></a>上传项目代码</h3><blockquote>
 <p>1.可以安装任意一款 ftp上传工具,此处推荐FileZilla,链接<br><img src="/20180418/阿里云部署nuxt项目/4.png" alt="阿里云官网文档"></p>
