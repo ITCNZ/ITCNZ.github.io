@@ -88,7 +88,7 @@
 <meta property="og:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg">
-<meta property="og:updated_time" content="2018-04-25T02:53:36.000Z">
+<meta property="og:updated_time" content="2018-04-25T03:31:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云部署nuxt项目">
 <meta name="twitter:description" content="本文重点介绍,如何将nuxt.js项目部署到阿里云服务器,通过在真实环境跑项目,测试nuxt的性能。">
@@ -415,7 +415,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" rel="gallery_cjgei99470003bhfy8hg1jk82"
+                 href="https://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" rel="gallery_cjgejm0x90001llfywwko3vuf"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://img.mp.itc.cn/upload/20170405/27d582716a95434e9a9dc5a60b2581ac_th.jpg" itemprop="contentUrl"/>
               </a>
@@ -500,7 +500,11 @@
 <blockquote>
 <p>启动项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.npm install 安装依赖包文件</span><br><span class="line"></span><br><span class="line">2. cd app/server文件夹下 &quot;pm2 start listrouter.js 启动服务接口</span><br><span class="line"></span><br><span class="line">3. cd app/目录下 &quot;pm2 start npm --name &quot;mynuxt&quot; -- start 启动前端</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<p>至此,代码部署完毕, 浏览器输入 “你的外网IP:端口号”(80端口可以不写) 就可启动项目了。<a href="http://47.104.245.86/" target="_blank" rel="noopener">点击查看demo</a></p>
+<p>至此,代码部署完毕, 浏览器输入 “你的外网IP:端口号”(80端口可以不写) 就可启动项目了。<a href="http://pre.itcnz.top" target="_blank" rel="noopener">点击查看demo</a></p>
+<blockquote>
+<p>如果,启动80端口被占</p>
+</blockquote>
+<p><img src="/20180418/阿里云部署nuxt项目/6.png" alt="阿里云官网文档"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 首先sudo netstat -apn | grep 80 查看那些程序占了端口;</span><br><span class="line"></span><br><span class="line">2. kill 25141</span><br></pre></td></tr></table></figure></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>第一次用阿里云,有许多还不太会,初级入门的可以看看,大佬可以忽略</p>
 
       
